@@ -18,7 +18,7 @@ top: 0;
 width: 100%;}
 
 .navigationBar li{
-    float: left;}
+    float: right;}
 
 .navigationBar li a{
     display: block;
@@ -44,9 +44,17 @@ h1, h2, h3, h4 {
  .blogs-grid{
      display: grid;
      grid-template-columns: 50% 50%;
+     
  }
 
  .blog-image{
      border-radius: 5px;
      box-shadow: 0 4px 6px 0 rgba(143, 11, 121, 0.425);
+ }
+ p{
+     font-family:'Comic Sans MS';
+     text-align: justify;
+     padding:  14px 16px;
+     border-radius: 10px;
+     box-shadow: rgba(143, 11, 121, 0.425);
  }
