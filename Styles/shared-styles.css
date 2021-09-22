@@ -1,3 +1,11 @@
+@media(max-width: 460px){
+    
+
+}
+
+
+
+
 .navigationBar{ list-style-type:none;
 margin: 0;
 padding: 0;
@@ -52,7 +60,7 @@ h1, h2, h3, h4 {
      box-shadow: 0 4px 6px 0 rgba(143, 11, 121, 0.425);
  }
  p{
-     font-family:'Comic Sans MS';
+     font-family:'';
      text-align: justify;
      padding:  14px 16px;
      border-radius: 10px;
