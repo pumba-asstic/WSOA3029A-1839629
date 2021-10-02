@@ -1,7 +1,7 @@
-@media(max-width: 460px){
+
     
 
-}
+
 
 
 
@@ -52,12 +52,21 @@ h1, h2, h3, h4 {
  .blogs-grid{
      display: grid;
      grid-template-columns: 50% 50%;
+     transition: all .1s linear;
+     grid-column: span 1;
+     grid-row: span 1;
+
+    border-bottom: 3px transparent;
+    border-width: 3px;
+    border-style: solid;
+    border-color: transparent;
      
  }
 
  .blog-image{
      border-radius: 5px;
      box-shadow: 0 4px 6px 0 rgba(143, 11, 121, 0.425);
+     
  }
  p{
      font-family:'';
