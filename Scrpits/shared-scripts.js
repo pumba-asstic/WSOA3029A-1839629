@@ -18,13 +18,13 @@ aboutBtn.addEventListener("click", () =>{
 });
 
 theoryBtn.addEventListener("click", () =>{
-    navToPage("theoryhomepage.html");
+    navToPage("/theory/blogposts/index.html");
 });
 
 dataVisBtn.addEventListener("click", () =>{
-    navToPage("datasetshomepage.html");
+    navToPage("/Datasets/index.html");
 });
 
 wireframeBtn.addEventListener("click", ()=>{
-    navToPage("index.html");
+    navToPage("/theory/wireframe/index.html");
 })
