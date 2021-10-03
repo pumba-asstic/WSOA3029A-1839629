@@ -9,7 +9,7 @@ function navToPage(link){
     window.location = link;
 }
 
-homeBtn.addEventListener("click", function(){
+homeBtn.addEventListener("click", () =>{
     navToPage("index.html");
 });
 

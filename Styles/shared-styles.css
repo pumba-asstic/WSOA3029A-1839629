@@ -35,8 +35,10 @@ width: 100%;}
     padding: 14px 16px;
 text-decoration: underline;}
 
+
 .navigationBar li a:hover:not(.active){
-        background-color:lightpink;}
+        background-color:lightpink;
+    cursor: pointer;}
 
 .active{
     background-color:rgb(217, 164, 248);
