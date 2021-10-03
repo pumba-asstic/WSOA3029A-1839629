@@ -1,20 +1,25 @@
-
-const homeBtn = document.querySelector('#index')
 const aboutBtn = document.querySelector('#about')
 const theoryBtn = document.querySelector('#theory')
 const dataVisBtn = document.querySelector('#datasets')
-const wireframeBtn = document.querySelector('#wires')
 
-function navToPage(link){
+(function () {
+ const {pathname } = window.location;
+
+if (pathname != "/index.hmtl") {
+    const homeBtn = document.querySelector("#index");
+
+    homeBtn.addEventListener("click",() => {
+        navToPage(`${window.location.origin}/index.html`);
+    });
+}
+})();
+
+function navToPage(link) {
     window.location = link;
 }
 
-homeBtn.addEventListener("click", () =>{
-    navToPage("index.html");
-});
-
 aboutBtn.addEventListener("click", () =>{
-    navToPage("homepage.html");
+    navToPage(`${window.location.origin}/homepage.html`);
 });
 
 theoryBtn.addEventListener("click", () =>{
@@ -25,6 +30,14 @@ dataVisBtn.addEventListener("click", () =>{
     navToPage("/Datasets/index.html");
 });
 
-wireframeBtn.addEventListener("click", ()=>{
-    navToPage("/theory/wireframe/index.html");
-})
+(function(){
+ const{pathname} = window.location;
+
+ if(pathname ="/theory/blogposts/index.html"){ 
+     const wireBtn= document.querySelector("#wires");
+
+    wireBtn.addEventListener("click",() =>{
+        navToPage(`${window.location.origin}/theory/wireframes/index.html`);
+    });
+ }
+});
