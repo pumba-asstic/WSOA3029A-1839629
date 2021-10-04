@@ -11,3 +11,22 @@ h2{font-size: 28px;}
 h3{font-size: 20px;}
 
 p{margin: 0 0 1.15em;}
+
+.pagemoves a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px 16px;
+}
+.pagemoves a:hover{
+    background-color:rgb(217, 164, 248);
+    color:black;
+    cursor: pointer;
+}
+.previous{
+    background-color:white;
+    color:black;
+}
+.next{
+    background-color: white;
+    color: black;
+}

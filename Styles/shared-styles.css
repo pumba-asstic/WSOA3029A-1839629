@@ -62,19 +62,32 @@ h1, h2, h3, h4 {
     border-width: 3px;
     border-style: solid;
     border-color: transparent;
-     
  }
 
  .blog-image{
      border-radius: 5px;
      box-shadow: 0 4px 6px 0 rgba(143, 11, 121, 0.425);
-    
-     
  }
  p{
-     font-family:'';
+     font-family:'Comic Sans MS';
      text-align: justify;
      padding:  14px 16px;
      border-radius: 10px;
      box-shadow: rgba(143, 11, 121, 0.425);
+ }
+ .contact{
+    position:relative;
+    background-color: rgba(211, 148, 195, 0.548);
+    width: 100%;
+    left:0;
+    bottom:0;
+    padding :0px 15px;
+ }
+ .content-block-left{
+    font-family:'Comic Sans MS';
+    text-align: center;
+    padding: 14px 16px ;
+ }
+ .graphsets{
+     text-align: center;
  }

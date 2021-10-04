@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="author" content="Nompumelelo Masilela">
+    <meta name ="description" content="Social Media Activities data between (2019-2021)">
+    <meta name="keywords" content="Social media platforms, Datasets">
+    
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="../Styles/shared-styles.css">
+    <title>Graph One</title>
+</head>
+<body>
+    <header>
+        <nav class="navigationBar">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../homepage.html">About</a></li>
+                <li><a href="../theory/blogposts/index.html">Academical Work</a></li>
+                <li><a href="index.html" a class="active">Data sets </a></li>
+            </ul>
+        </nav>
+    </header>
+<br>
+<br>
+<h1> Graph One</h1>
+ <h2>Social media activities(2019-2021)</h2>
+<p class="graphsets">The rise of the new world order and  the lack of social skills and physical interaction. " new age pandemic" </p>
+<br>
+<svg id ="visable" width="650" height="550"></svg>
+<script>
+    console.log(d3);
+    let margin =50;
+    let visableArea =d3.select("#visable");
+    let xScale = d3.scaleLinear().domain([0,100]).range([0,500]);
+    let yScale = d3.scaleLinear().domain([0,100]).range([500,0]);
+
+
+    visableArea.append('g')
+    .attr("transform",`translate(${margin},10)`)
+    .call(d3.axisLeft(yScale));
+
+    visableArea.append('g')
+    .attr("transform",`translate(${margin},509)`)
+    .call(d3.axisBottom(xScale));
+
+
+</script>
+</body>
+
+</html>
