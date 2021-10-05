@@ -3,14 +3,15 @@ const theoryBtn = document.querySelector('#theory')
 const dataVisBtn = document.querySelector('#datasets')
 
 (function () {
- const {pathname } = window.location;
+ const {pathname} = window.location;
 
-if (pathname != "/index.hmtl") {
-    const homeBtn = document.querySelector("#index");
+if (pathname != "/index.html") {
+    //const homeBtn = document.querySelector("#index");
 
-    homeBtn.addEventListener("click",() => {
-        navToPage(`${window.location.origin}/index.html`);
+   homeBtn.addEventListener("click",() => {
+       navToPage(`${window.location.origin}/index.html`);
     });
+   console.log(document.querySelector("#index"));
 }
 })();
 
