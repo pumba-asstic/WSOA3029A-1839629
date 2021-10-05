@@ -6,14 +6,16 @@ const dataVisBtn = document.querySelector('#datasets')
  const {pathname} = window.location;
 
 if (pathname != "/index.html") {
-    //const homeBtn = document.querySelector("#index");
+   // const homeBtn = document.querySelector("#index");
 
-   homeBtn.addEventListener("click",() => {
-       navToPage(`${window.location.origin}/index.html`);
-    });
-   console.log(document.querySelector("#index"));
+  // homeBtn.addEventListener("click",() => {
+      // navToPage(`${window.location.origin}/index.html`);
+   // });
+   console.log("hello")
 }
-})();
+
+})()
+
 
 function navToPage(link) {
     window.location = link;
