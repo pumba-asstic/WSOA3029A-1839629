@@ -1,5 +1,4 @@
-
-    
+  
 
 
 
@@ -62,11 +61,16 @@ h1, h2, h3, h4 {
     border-width: 3px;
     border-style: solid;
     border-color: transparent;
+     margin-top: 50;
+     margin-right: 50;
  }
 
  .blog-image{
      border-radius: 5px;
      box-shadow: 0 4px 6px 0 rgba(143, 11, 121, 0.425);
+     margin-left: 60px;
+     margin-right: 80px;
+     align-items: center;
  }
  p{
      font-family:'Comic Sans MS';
@@ -74,6 +78,7 @@ h1, h2, h3, h4 {
      padding:  14px 16px;
      border-radius: 10px;
      box-shadow: rgba(143, 11, 121, 0.425);
+     margin: 50px 50px;
  }
  .contact{
     position:relative;
