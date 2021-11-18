@@ -53,7 +53,7 @@ function BuildPie(id, chartData, otions)
 
     xVarName = options[0].xaxis;
 
-    var color = d3.scale.ordinal().range(runningColors);
+    var rcolor = d3.scale.ordinal().range(runningColors);
 
     arc = d3.svg.arc()
         .outerRadius(radius - 10 )
@@ -271,13 +271,6 @@ ChartOptions =[{
     "xaxis": "Platform",
     "yaxis": "Total" 
 }]
-
-
-
-
-
-
-
 
 </script>
 
