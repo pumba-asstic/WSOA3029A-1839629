@@ -66,11 +66,38 @@ h1, h2, h3, h4 {
  }
 
  .blog-image{
+      justify-self: center;
+      padding: 4%;
      border-radius: 5px;
      box-shadow: 0 4px 6px 0 rgba(143, 11, 121, 0.425);
      margin-left: 60px;
      margin-right: 80px;
      align-items: center;
+ }
+ .blog-image-title{
+     justify-self: center;
+     padding: 4%;
+     position: relative;
+ }
+ .blog-image-title:hover> h2{
+     visibility: visible;
+ }
+ .blog-image-title>h2{
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color:green;
+     visibility: hidden;
+     z-index: 2;
+     transition: all ease-in-out .2s;
+
+ }
+ ol{
+    font-family: sans-serif;
+ }
+ ul{
+    font-family: sans-serif;
  }
  p{
      font-family:'Comic Sans MS';
