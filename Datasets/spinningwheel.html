@@ -24,7 +24,7 @@
 <br>
 <br>
 <button class="pagemoves">
-    <a href="graph4.html" class="previous">Previous</a>
+    <a href="graph3.html" class="previous">Previous</a>
     </button>
     <br>
 <br>
@@ -32,52 +32,29 @@
     <p class="graphsets">Business tools used on social media online businesses </p>
 
     <div class="wheel">
-        <div class ="card" id="card"></div>
-        <div class ="card" id="card2"></div>
-        <div class ="card" id="card3"></div>
-        <div class ="card" id="card4"></div>
-        <div class ="card" id="card5"></div>
-        <div class ="card" id="card6"></div>
-        <div class ="card" id="card7"></div>
-        <div class ="card" id="card7"></div>
-
-        
+        <img src="../Images/tool1.png" class="card" width="90" height="90">
+        <img src="../Images/tool2.png" class="card" width="90" height="90">
+        <img src="../Images/tool3.jpg" class="card" width="90" height="90">
+        <img src="../Images/tool4.jpg" class="card" width="90" height="90">
+        <img src="../Images/tool5.jpg" class="card" width="90" height="90">
+        <img src="../Images/tool6.jpg" class="card" width="90" height="90">
+        <img src="../Images/tool7.jpg" class="card" width="90" height="90"> 
+        <img src="../Images/tool8.jpg" class="card" width="90" height="90">
 
     </div>
     <br>
     <br>
 
- <!--script src="../Scrpits/spinningwheel.js"></script> -->
-   <script>
-
-    let theta = Math.PI / 4.0;
-    let newTheta = 0.0;
-    let newX = 0.0;
-    let newY = 0.0;
-    let wheelRadius = 200.00;
-    const wheel = document.querySelector('.wheel')
-    const cards = document.querySelectorAll('.card');
-    const center ={
-         x:  parseFloat (getComputedStyle(cards[0]).left),
-         y: parseFloat (getComputedStyle(cards[0]).top)
-
-    }
-  
-    cards.forEach((card, index) => 
-    {   newTheta = theta *index;
-
-        newX= (Math.cos(newTheta) * wheelRadius);
-        newY= ( -1.0 * Math.sin(newTheta) * wheelRadius);
-
-        card.style.left = `${ (center .x + newX)}px`;
-        card.style.top = `${ (center .y + newY)}px`;
-    });
-
-document.addEventListener('wheel', event => 
-{
-    console.log(event)
-});
-   </script>
+   <!-- <div class ="card" id="card"></div>
+    <div class ="card" id="card2"></div>
+    <div class ="card" id="card3"></div>
+    <div class ="card" id="card4"></div>
+    <div class ="card" id="card5"></div>
+    <div class ="card" id="card6"></div>
+    <div class ="card" id="card7"></div>
+    <div class ="card" id="card7"></div>-->
+ <script src="../Scrpits/spinningwheel.js"></script>
+   
 
 </body>
 </html>
